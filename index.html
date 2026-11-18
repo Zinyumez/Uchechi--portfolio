@@ -1,80 +1,184 @@
 
+
+  
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Uchechi Umezurike Ozuruonye | Data Analyst</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      background: #080d0b;
-      color: #f1f5f2;
-      font-family: Arial, sans-serif;
-      line-height: 1.7;
-    }
-    header {
-      padding: 24px 8%;
-      border-bottom: 1px solid #263b30;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-    header h2 { margin: 0; color: #35c982; }
-    nav a {
-      color: #eee;
-      text-decoration: none;
-      margin-left: 16px;
-    }
-    main { padding: 65px 8%; }
-    .hero { max-width: 850px; }
-    .tag { color: #35c982; font-weight: bold; }
-    h1 { font-size: 42px; line-height: 1.2; }
-    h2 { color: #35c982; }
-    .button {
-      display: inline-block;
-      background: #35c982;
-      color: #07110b;
-      padding: 12px 22px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 15px;
-    }
-    section { margin-top: 65px; }
-    .card {
-      background: #111b15;
-      border: 1px solid #263b30;
-      padding: 24px;
-      border-radius: 12px;
-      margin-top: 20px;
-    }
-    .skills span {
-      display: inline-block;
-      background: #183426;
-      color: #65e6a5;
-      padding: 8px 14px;
-      border-radius: 20px;
-      margin: 5px;
-    }
-    footer {
-      border-top: 1px solid #263b30;
-      padding: 25px 8%;
-      color: #aab7ae;
-    }
-    a { color: #65e6a5; }
-    @media(max-width:600px) {
-      h1 { font-size: 32px; }
-      nav a { margin-left: 8px; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uchechi Umezurike Ozuruonye | Data Analyst</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #080d0b;
+  color: #f4f7f5;
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+
+header {
+  padding: 22px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #20372b;
+}
+
+.logo {
+  color: #39d98a;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+nav a {
+  color: #d8e4dc;
+  text-decoration: none;
+  margin-left: 18px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #39d98a;
+}
+
+.container {
+  width: 84%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.hero {
+  padding: 85px 0;
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  flex-wrap: wrap;
+}
+
+.profile {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #39d98a;
+}
+
+.intro {
+  flex: 1;
+  min-width: 250px;
+}
+
+.tag {
+  color: #39d98a;
+  letter-spacing: 2px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: clamp(32px, 5vw, 52px);
+  line-height: 1.2;
+  margin: 12px 0;
+}
+
+h2 {
+  color: #39d98a;
+  font-size: 28px;
+}
+
+.description {
+  color: #b7c5bc;
+  max-width: 650px;
+}
+
+.button {
+  display: inline-block;
+  background: #39d98a;
+  color: #07130c;
+  padding: 12px 24px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+section {
+  padding: 55px 0;
+}
+
+.card {
+  background: #111b15;
+  border: 1px solid #263e30;
+  border-radius: 14px;
+  padding: 28px;
+  margin-top: 20px;
+}
+
+.skills span {
+  display: inline-block;
+  background: #183526;
+  color: #68e6a6;
+  padding: 9px 16px;
+  border-radius: 25px;
+  margin: 6px;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.metric {
+  background: #0b2116;
+  border: 1px solid #28543b;
+  border-radius: 10px;
+  padding: 18px;
+}
+
+.metric strong {
+  display: block;
+  color: #39d98a;
+  font-size: 27px;
+}
+
+.dashboard {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  margin-top: 25px;
+  border: 1px solid #31513e;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid #263e30;
+  color: #a9b8ae;
+}
+
+@media(max-width:650px) {
+  .container { width: 90%; }
+  .hero { text-align: center; justify-content: center; }
+  nav { margin-top: 12px; }
+  nav a { margin: 5px; }
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <h2>Uchechi.</h2>
+  <div class="logo">UCHECHI.</div>
   <nav>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
@@ -83,71 +187,133 @@
   </nav>
 </header>
 
-<main>
-  <div class="hero">
-    <img src="1765022935227 (1).jpg"
-    <p class="tag">DATA ANALYST | POWER BI | EXCEL | SQL</p>
-    <h1>Hi, I'm Uchechi Umezurike Ozuruonye.</h1>
-    <h2>Turning Data into Meaningful Insights.</h2>
-    <p>
-      I am a Data Analyst interested in transforming raw data
-      into clear reports and meaningful insights that support
-      better business decisions.
-    </p>
-    <a class="button" href="#projects">View My Project</a>
-  </div>
+<main class="container">
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I work across data entry, data analytics and customer
-      operations management. I enjoy organising data,
-      identifying patterns and presenting information
-      through clear and interactive dashboards.
-    </p>
-  </section>
+<div class="hero">
 
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <div class="skills">
-      <span>Microsoft Excel</span>
-      <span>Power BI</span>
-      <span>SQL</span>
-      <span>Data Cleaning</span>
-      <span>Data Visualisation</span>
-      <span>Reporting</span>
-      <span>Microsoft Office</span>
-    </div>
-  </section>
+<img class="profile"
+src="1765022935227 (1).jpg"
+alt="Uchechi Umezurike Ozuruonye">
 
-  <section id="projects">
-    <h2>Featured Project</h2>
-    <div class="card">
-      <p class="tag">POWER BI | HR ANALYTICS</p>
-      <h3>HR Employee Attrition Analysis</h3>
-      <img src="hr-attrition-dashboard-clean.jpg"
-      <p>
-        An analysis of employee turnover patterns across
-        departments, age groups, job roles, gender and salary
-        levels to help organisations understand workforce
-        attrition.
-      </p>
-      <p><strong>Total Employees:</strong> 1,470</p>
-      <p><strong>Employees Who Left:</strong> 237</p>
-      <p><strong>Active Employees:</strong> 1,233</p>
-      <p><strong>Attrition Rate:</strong> 16.12%</p>
-    </div>
-  </section>
+<div class="intro">
+<p class="tag">WELCOME TO MY PORTFOLIO</p>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>I'm open to data analytics opportunities and professional connections.</p>
-    <p>GitHub: <a href="https://github.com/Zinyumez">Visit my GitHub</a></p>
-  </section>
+<h1>Uchechi Umezurike Ozuruonye</h1>
+
+<h2>Data Analyst</h2>
+
+<p class="description">
+I transform raw data into meaningful insights through
+data analysis, reporting and visualisation. I enjoy
+using data to support better business decisions.
+</p>
+
+<a href="#projects" class="button">Explore My Project</a>
+</div>
+
+</div>
+
+<section id="about">
+<h2>About Me</h2>
+
+<div class="card">
+<p>
+I am a Data Analyst with experience across data entry,
+data analytics and customer operations management.
+I enjoy organising information, identifying patterns
+and presenting insights through clear reports
+and interactive dashboards.
+</p>
+</div>
+</section>
+
+<section id="skills">
+<h2>Technical Skills</h2>
+
+<div class="card skills">
+<span>Microsoft Excel</span>
+<span>Power BI</span>
+<span>SQL</span>
+<span>Data Cleaning</span>
+<span>Data Visualisation</span>
+<span>Data Reporting</span>
+<span>Microsoft Office</span>
+</div>
+</section>
+
+<section id="projects">
+<h2>Featured Project</h2>
+
+<div class="card">
+
+<p class="tag">POWER BI | HR ANALYTICS</p>
+
+<h3>HR Employee Attrition Analysis</h3>
+
+<p>
+This project analyses employee attrition patterns
+to help organisations understand workforce turnover.
+The dashboard explores employee departures across
+departments, age groups, job roles, gender and salary levels.
+</p>
+
+<div class="metrics">
+
+<div class="metric">
+<strong>1,470</strong>
+Total Employees
+</div>
+
+<div class="metric">
+<strong>237</strong>
+Employees Who Left
+</div>
+
+<div class="metric">
+<strong>1,233</strong>
+Active Employees
+</div>
+
+<div class="metric">
+<strong>16.12%</strong>
+Attrition Rate
+</div>
+
+</div>
+
+<h3>Project Dashboard</h3>
+
+<img
+class="dashboard"
+src="hr-attrition-dashboard-clean.jpg"
+alt="HR Employee Attrition Analysis Power BI Dashboard">
+
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+
+<div class="card">
+<p>
+I am open to professional connections,
+collaborations and data analytics opportunities.
+</p>
+
+<p>
+GitHub:
+<a href="https://github.com/Zinyumez">
+Visit my GitHub profile
+</a>
+</p>
+</div>
+</section>
+
 </main>
 
 <footer>
-  © 2026 Uchechi Umezurike Ozuruonye. All rights reserved.
+© 2026 Uchechi Umezurike Ozuruonye.
+Data Analyst Portfolio.
 </footer>
 
 </body>
